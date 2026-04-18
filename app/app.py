@@ -3,7 +3,8 @@
 """Aplicación Flask para una calculadora web."""
 
 from flask import Flask, render_template, request
-from .calculadora import sumar, restar, multiplicar, dividir
+
+from .calculadora import dividir, multiplicar, restar, sumar
 
 app = Flask(__name__)
 
@@ -38,5 +39,3 @@ def index():
 
 if __name__ == "__main__":  # pragma: no cover
     app.run(host="127.0.0.1", port=5000)
-   
-
